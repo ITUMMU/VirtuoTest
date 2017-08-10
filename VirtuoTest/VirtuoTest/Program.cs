@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Data.Odbc;
+using System.Data.SqlClient;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace VirtuoTest
 {
@@ -44,7 +41,7 @@ namespace VirtuoTest
                 Console.WriteLine("Test avec connexion ODBC.");
                 Regex regex = new Regex("[ ]{2,}", RegexOptions.None);
                 String tempFileName = System.IO.Path.GetTempFileName();
-                String sqlServer = @"Virtuo";
+                String sqlServer = @"VirtuoTest";
                 Int32 sqlTableCount = 0;
                 Int32 sqlLines = 0;
 
